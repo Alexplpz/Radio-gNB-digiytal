@@ -32,7 +32,7 @@ app.listen(port, () => {
     console.log(`Interfaz de la radio corriendo en ${port}`)
     const { stdout, stderr, code } = shell.exec('docker container list', { silent: true })
     console.log(stdout)
-    if(stdout.indexOf('amf') >= 0){
+    if(stdout.indexOf('srsran_gnb') >= 0){
       statusCore = "on"
     }
 
