@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="icon" type="image/x-icon" href="/static/favicon.ico">
+    <title>Configuración - Radio 5G</title>
+    <link rel="stylesheet" href="./static/style.css">
+</head>
+<body>
+    <h1>Interfaz del gNB</h1>
+    <form action="/submit" method="post">
+        <label class= "textoLabel" for="plmn">PLMN: (Importante entre comillas simples)</label><br>
+        <input type="text" id="plmn" name="plmn" ><br>
+        <label class= "textoLabel" for="tac">Tracking Area Code:</label><br>
+        <input type="text" id="tac" name="tac" ><br>
+        <label class= "textoLabel" for="band">Banda:</label><br>
+        <input type="text" id="band" name="band" ><br>
+        <label class= "textoLabel" for="dl_arfcn">ARFCN:</label><br>
+        <input type="text" id="dl_arfcn" name="dl_arfcn" ><br>
+        <label class= "textoLabel" for="channel_bandwidth_MHz">Banda MHz:</label><br>
+        <input type="text" id="channel_bandwidth_MHz" name="channel_bandwidth_MHz" ><br>
+        <label class= "textoLabel" for="pci">PCI:</label><br>
+        <input type="text" id="pci" name="pci" ><br>
+        <label class= "textoLabel" for="common_scs">SCS:</label><br>
+        <input type="text" id="common_scs" name="common_scs" ><br>
+        <input type="submit" value="Guardar">    
+      </form>
+      <script type="module" src="./changeSetup.js"></script>
+      <footer class="footer">
+        <img src="./static/logo.png" alt="Logo">
+        <p>&copy; 2024 Digiytal S.L.U. Todos los derechos reservados.</p>
+    </footer>
+    </body>
+    
+</html>

@@ -1,0 +1,30 @@
+amf:
+  addr: 127.0.1.100
+  bind_addr: 127.0.0.1
+cell_cfg:
+band: 78
+channel_bandwidth_MHz: 20
+common_scs: 30
+dl_arfcn: 628888
+pci: 2
+plmn: '00101'
+tac: 1
+log:
+  all_level: warning
+  filename: /tmp/gnb.log
+metrics:
+  addr: 192.199.1.39
+  enable_json_metrics: 'True'
+  port: 55555
+pcap:
+  mac_enable: 'False'
+  mac_filename: /tmp/gnb_mac.pcap
+  ngap_enable: 'False'
+  ngap_filename: /tmp/gnb_ngap.pcap
+ru_sdr:
+  device_args: type=b200,num_recv_frames=64,num_send_frames=64
+  device_driver: uhd
+  otw_format: sc12
+  rx_gain: 40
+  srate: 23.04
+  tx_gain: 80

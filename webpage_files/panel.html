@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Inicio - Radio 5G</title>
+    <link rel="stylesheet" href="./static/style.css">
+    <link rel="icon" type="image/x-icon" href="/static/favicon.ico">
+
+</head>
+<body>
+    <div class="cabecera">
+        <h1>Panel de configuración del Radio 5G</h1>
+        <h2 id="statusCore">Radio apagada ❌ </h2>
+    </div>
+        <div class="tg-wrap"><table><tbody> 
+            <tr>
+                <td>TAC</td>
+                <td id="tac">11</td>
+            </tr> 
+            <tr>
+                <td>PLMN</td>
+                <td id="plmn">11</td>
+            </tr> 
+            <tr>
+                <td>Bandwidth:</td>
+                <td id="band">11</td>
+            </tr> 
+            <tr>
+                <td>Bandwidth MHz:</td>
+                <td id="channel_bandwidth_MHz">11</td>
+            </tr> 
+            <tr>
+                <td>SCS:</td>
+                <td id="common_scs">11</td>
+            </tr> 
+            <tr>
+                <td>PCI:</td>
+                <td id="pci">11</td>
+            </tr> 
+            <tr>
+                <td>ARFCN: </td>
+                <td id="dl_arfcn">11</td>
+            </tr> 
+            
+        </div>
+        <div class="button-container">
+        <button class="button-3" onclick="window.location.href = '/metricas'">Ir a las metricas</button>
+        <button class="button-3" onclick="window.location.href = '/setup'">Cambiar configuración</button>
+        <button style="background-color: green" class="button-3" onclick="window.location.href = '/on'">Encender radio</button>
+        <button style="background-color: red" class="button-3"" onclick="window.location.href = '/off'">Apagar radio</button>
+
+    </div>
+
+    <script type="module" src="./changeTable.js"></script>
+    <footer style="right:0px" class="footer">
+        <img src="./static/logo.png" alt="Logo">
+        <p>&copy; 2024 Digiytal S.L.U. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>
